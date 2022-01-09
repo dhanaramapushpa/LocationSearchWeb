@@ -4,7 +4,7 @@ import Search from './Component/Search/search';
 import axios from "axios";
 
 function App() {
-  const LOCATION_SEARCH_URL = 'http://localhost:8080/elastic';
+  const LOCATION_SEARCH_URL = 'https://location-search-backend.herokuapp.com/elastic';
   const options = {
     method: 'DELETE',
     url: LOCATION_SEARCH_URL+"/deleteAll"

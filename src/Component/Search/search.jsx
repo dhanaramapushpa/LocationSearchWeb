@@ -10,7 +10,7 @@ export default function Search(){
     const [displayValue,setDisplayValue] = useState(2);
     const [selectedOptions,setSelectedOptions] = useState([]);
     const [cities,setCities] = useState([]); 
-    const LOCATION_SEARCH_URL = 'http://localhost:8080/elastic';
+    const LOCATION_SEARCH_URL = 'https://location-search-backend.herokuapp.com/elastic';
     function handleChange(e) {
         if(e.length>3){
             getCity(e);
